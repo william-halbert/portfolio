@@ -1,3 +1,131 @@
+.iconWrapper {
+  display: inline-block;
+  margin-right: 0;
+}
+
+.iconWrapper:last-child {
+  margin-right: 0;
+}
+
+.gmailWrapper {
+  position: relative;
+}
+
+.emailDropdown {
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  top: 6vh;
+  left: -105%;
+}
+
+.emailDropdown:hover {
+  cursor: text;
+}
+.emailDropdown p {
+  position: relative;
+}
+.emailDropdown p:hover {
+  cursor: text;
+}
+.headerLogo {
+  margin-top: 25px;
+  margin-left: 30px;
+  padding: none;
+  width: 250px;
+  max-height: 95%;
+  object-fit: contain;
+}
+
+.socialMediaIcons {
+  position: absolute;
+  right: 11vw;
+  display: flex;
+  justify-content: space-between;
+  width: 12vw;
+}
+
+.socialMediaIcons a {
+  margin-right: 3vw;
+}
+
+.socialMediaIcons img {
+  width: 100%;
+  max-width: 42px;
+  margin-right: 3vw;
+}
+.socialMediaIcons img:hover {
+  cursor: pointer;
+}
+
+/* Add the new class in your CSS file */
+.gmailIcon {
+  margin-right: 3vw;
+}
+
+@media screen and (max-width: 900) {
+  .socialMediaIcons {
+    width: 35vw;
+    margin-right: 0vw;
+    right: 5vw;
+  }
+  .socialMediaIcons img {
+    margin: 3vw;
+    width: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerLogo {
+    margin-left: 0px;
+    width: 150px;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .socialMediaIcons a {
+    margin-right: 0;
+  }
+  .socialMediaIcons {
+    width: 30vw;
+    margin-right: 1vw;
+    right: 0;
+  }
+  .socialMediaIcons img {
+    margin: 0;
+    width: 7vw;
+  }
+  .gmail {
+    margin-right: 4vw;
+  }
+  .emailDropdown {
+    top: 6vh;
+    left: -250%;
+    padding: 5px 0;
+  }
+  .emailDropdown p {
+    padding: 0 0;
+    margin: 1vh 1.5vw;
+  }
+  .header {
+    height: 0px;
+  }
+}
+
+/*\/\/\
+/
+/
+/
+/
+/
+/
+x
+/
+/\*/
+
 .header {
   position: fixed;
   top: 0;
@@ -8,44 +136,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  z-index: 10;
-}
-.headerHover {
-  position: fixed;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  z-index: 10;
-  background: black;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 90vw;
+  border-radius: 0 0 25px 25px;
 }
 
-.headerPurple {
-  position: fixed;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 15vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  z-index: 10;
-  background-image: linear-gradient(
-    hsla(253, 56%, 51%, 1),
-    hsla(263, 49%, 68%, 1)
-  );
-}
-
-.headerLogo {
-  margin-top: 0;
-  padding: none;
-  width: 18vw;
-  margin-left: 2vw;
-}
 .headerLogo:hover {
   cursor: pointer;
 }
@@ -63,44 +161,4 @@
   /*box-shadow: 0 3px 10px #f9deb1;*/
   color: #f9deb1;
   cursor: pointer;
-}
-.signIn {
-  position: absolute;
-  right: 0;
-  margin-right: 5vw;
-  outline: none;
-  border: none;
-}
-.signIn:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
-}
-.features,
-.signIn {
-  text-decoration: none;
-}
-.signIn {
-  margin: 0;
-  margin-right: 5vw;
-  padding: 15px 20px;
-
-  color: #fefefe;
-  font-size: 20px;
-  letter-spacing: 0.8px;
-  z-index: 11;
-}
-.features {
-  margin: 0;
-  margin-left: 3vw;
-  padding: 15px 20px;
-  background: rgba(76, 175, 80, 0);
-  /*border-radius: 8px;*/
-  border: none;
-  color: #fefefe;
-  font-size: 20px;
-  letter-spacing: 0.8px;
-  z-index: 20;
-}
-.features:hover {
-  color: hsla(8, 43%, 78%, 1);
 }

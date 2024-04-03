@@ -13,13 +13,19 @@
     "framer-motion": "^9.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-h5-audio-player": "^3.8.6",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.3",
     "react-phone-input-2": "^2.15.1",
     "react-phone-number-input": "^3.2.19",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "react-scroll-snap": "^1.0.0",
+    "react-scrollama": "^2.3.2",
+    "react-use-scroll-snap": "^0.0.4",
+    "scroll-snap": "^4.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,5 +51,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:4000"
 }

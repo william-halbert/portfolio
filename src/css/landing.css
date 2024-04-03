@@ -1,131 +1,637 @@
-#heroImg {
-  height: 120vh;
+.landingPage {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.heroTop {
+  background: white;
   width: 100vw;
-  padding: 0;
-  margin-bottom: 0;
 }
-.heroWrapper {
-  height: 120vh;
+.bigLogo {
+  margin-top: 5vh;
+  width: 90vw;
+  max-height: 70vh;
+  margin-left: 5vw;
 }
-#heroText {
+.bottomProjects {
+  position: relative;
+  border-radius: 40px 40px 0 0;
+  width: 90vw;
+  background: black;
+}
+.profileDiv {
+  width: 90vw;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background: /* older syntax */ -webkit-radial-gradient(
+      50% 0,
+      circle,
+      rgba(255, 0, 0, 0.5),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    -webkit-radial-gradient(6.7% 75%, circle, rgba(0, 0, 255, 0.5), rgba(
+            0,
+            0,
+            255,
+            0
+          )
+          70.71%),
+    -webkit-radial-gradient(93.3% 75%, circle, rgba(255, 60, 0, 0.666), rgba(
+            0,
+            255,
+            0,
+            0
+          )
+          70.71%);
+  background: /* newest syntax */ radial-gradient(
+      circle at 50% 0,
+      rgba(255, 0, 0, 0.5),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(0, 0, 255, 0.5),
+      rgba(0, 0, 255, 0) 70.71%
+    ),
+    radial-gradient(
+      circle at 93.3% 75%,
+      rgba(30, 255, 0, 0.183),
+      rgba(0, 255, 0, 0) 70.71%
+    );
+}
+.profileImg {
+  margin-top: 5vh;
+  width: 60vw;
+  border-radius: 20px 20px 0 0;
+}
+.audioSelect {
+  min-width: 400px;
+}
+.introDiv {
+  margin: 30vh 0 25vh 0;
+  width: 90vw;
+}
+
+.introDiv h1 {
+  font-size: 4rem;
+  max-width: 70vw;
+  line-height: 6rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.introDiv h4 {
+  font-size: 1.5rem;
+  max-width: 60vw;
+  line-height: 2.5rem;
+  color: grey;
+  align-self: center;
+}
+.heroTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.introBottom {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 2vh 0 0 0;
+  gap: 3vw;
+}
+
+.hire-me-arrow {
+  transition: transform 0.3s ease;
+}
+
+button:hover .hire-me-arrow {
+  transform: translateX(10px);
+}
+a {
+  text-decoration: none;
+}
+.introBottom button {
+  width: 200px;
+  padding: 20px 10px;
+  color: white;
+  background: black;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.introBottom button:hover {
+  background: #ff3131;
+  cursor: pointer;
+}
+.skillsDiv {
+  margin: 10vh 5vw;
+  width: 90vw;
+  background: rgba(228, 216, 198, 0.351);
+  border-radius: 40px;
+}
+.skillsDiv h1 {
+  margin-left: 5vw;
+}
+.skillsDiv h4 {
+  margin-left: 5vw;
+}
+.bigText {
+  color: #ff3131;
+  font-size: 5rem;
+  font-weight: bold;
+  user-select: none;
+  margin: 0 6vw;
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.longLine {
   position: absolute;
-  top: 15vh;
-  right: 0;
-  left: 0;
+  left: calc(10vw - 25px);
+  top: 60px;
+  width: 2px;
+  height: calc(100% - 120px);
+  background-color: #ff3131;
+  z-index: 1;
+}
+.w {
+  height: 35px;
+}
+.skillsText {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.knowledgeDiv {
+  align-self: start;
+  margin: 10vh 0 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+.knowledgeDiv h4 {
+  margin: 0 0 0 10px;
+  letter-spacing: 1px;
+  color: grey;
+  font-weight: bold;
+}
+.skillsText h1 {
+  color: black;
+  margin-top: 0;
+  font-size: 4rem;
+  line-height: 6rem;
+}
+.superchargeDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.superchargeDiv h4 {
+  color: black;
+  margin-top: 3vh;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  margin-right: 5vw;
+  text-align: right;
+  align-self: start;
+}
+.reactNodeDiv {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-self: center;
+  margin: 5vh auto 0 auto;
+}
+.reactDiv {
+  width: 37.5vw;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 1;
-  margin-bottom: 0;
+  border-radius: 20px;
+  background: /* older syntax */ -webkit-radial-gradient(
+      50% 0,
+      circle,
+      rgba(0, 229, 255, 0.718),
+      rgba(0, 137, 114, 0.665) 70.71%
+    ),
+    -webkit-radial-gradient(6.7% 75%, circle, rgba(0, 0, 255, 0.479), rgba(
+            0,
+            0,
+            255,
+            0
+          )
+          70.71%),
+    -webkit-radial-gradient(93.3% 75%, circle, rgba(255, 60, 0, 0.345), rgba(
+            255,
+            204,
+            0,
+            0
+          )
+          70.71%);
+  background: /* newest syntax */ radial-gradient(
+      circle at 50% 0,
+      rgba(255, 200, 0, 0.889),
+      rgba(255, 0, 0, 0.773) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(255, 242, 0, 0.63),
+      rgba(221, 255, 0, 0.729) 70.71%
+    ),
+    radial-gradient(
+      circle at 93.3% 75%,
+      rgba(255, 162, 0, 0.4),
+      rgba(255, 47, 0, 0.298) 70.71%
+    );
 }
-.everythingText {
-  text-align: center;
-  margin-top: 4vh;
-  color: white;
-  font-size: 54px;
-  z-index: 2;
-  letter-spacing: 2px;
-  margin-bottom: 0;
-  text-shadow: 4px 4px black;
+.nodeDiv {
+  width: 37.5vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: /* older syntax */ -webkit-radial-gradient(
+      50% 0,
+      circle,
+      rgba(14, 243, 21, 0.718),
+      rgba(15, 221, 33, 0.665) 70.71%
+    ),
+    -webkit-radial-gradient(6.7% 75%, circle, rgba(0, 0, 255, 0.479), rgba(
+            255,
+            234,
+            0,
+            0.805
+          )
+          70.71%),
+    -webkit-radial-gradient(93.3% 75%, circle, rgba(0, 255, 68, 0.742), rgba(
+            106,
+            255,
+            0,
+            0.763
+          )
+          70.71%);
+  background: /* newest syntax */ radial-gradient(
+      circle at 50% 0,
+      rgba(247, 12, 12, 0.755),
+      rgba(242, 160, 37, 0.491) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(255, 255, 255, 0.827),
+      rgba(165, 214, 18, 0.444) 70.71%
+    ),
+    radial-gradient(
+      circle at 93.3% 75%,
+      rgba(43, 255, 0, 0.398),
+      rgba(255, 47, 0, 0.298) 70.71%
+    );
 }
-.withKeyText {
-  text-align: center;
-  margin-top: 5vh;
-  color: white;
-  text-shadow: 2px 2px black;
-  font-size: 32px;
-  z-index: 2;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-  font-weight: bold;
-}
-
-.heroWrapper .btn {
+.reactNodeDiv h2 {
   margin: 0;
-  padding: 15px 20px;
-  background: rgba(76, 175, 80, 0);
-  /*border-radius: 8px;*/
-  border: none;
+  font-size: 3rem;
   color: white;
-  font-size: 20px;
-  letter-spacing: 0.8px;
 }
-.heroWrapper .btn:hover {
-  /*box-shadow: 0 3px 10px #f9deb1;*/
-  color: #f9deb1;
-  cursor: pointer;
-}
-.heroWrapper .tryNow {
-  margin-top: 8vh;
-  /*background: #fd5622ff;*/
-  border-radius: 1px;
-  border: 3px solid white;
-  font-size: 18px;
-  padding: 24px 14px 24px 28px;
-}
-
-.heroWrapper .tryNow:hover {
-  /*background: white;*/
-  background: white;
-}
-.heroWrapper .tryNow:hover .tryText {
-  /*color: #fd5622ff;*/
-  color: black;
-}
-
-/*scheme dark orange hsla(12, 48%, 57%, 1);
-scheme light orange: hsla(8, 43%, 78%, 1);
-*/
-.rightArrow {
-  position: relative;
-  top: 2px;
-  margin-left: 10px;
+.reactNodeDiv h3 {
+  margin-top: 5vh;
+  font-size: 1.5rem;
   color: white;
-  display: none;
 }
-.tryText {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.mapsWrap {
-  background: black;
+.otherSkillsDiv {
+  width: 80vw;
+  margin: 10vh auto 10vh auto;
+  border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 100vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: /* older syntax */ -webkit-radial-gradient(
+      50% 0,
+      circle,
+      rgba(243, 14, 178, 0.718),
+      rgba(221, 15, 77, 0.665) 70.71%
+    ),
+    -webkit-radial-gradient(6.7% 75%, circle, rgba(255, 25, 0, 0.479), rgba(
+            255,
+            111,
+            0,
+            0.805
+          )
+          70.71%),
+    -webkit-radial-gradient(93.3% 75%, circle, rgba(179, 0, 255, 0.742), rgba(
+            255,
+            0,
+            225,
+            0.763
+          )
+          70.71%);
+  background: /* newest syntax */ radial-gradient(
+      circle at 50% 0,
+      rgba(247, 12, 216, 0.755),
+      rgba(236, 74, 20, 0.491) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(255, 255, 255, 0.827),
+      rgba(214, 18, 214, 0.444) 70.71%
+    ),
+    radial-gradient(
+      circle at 93.3% 75%,
+      rgba(255, 0, 0, 0.398),
+      rgba(255, 47, 0, 0.298) 70.71%
+    );
 }
-#usaMap {
-  margin: 5vh 3vw 5vh 5vw;
-  text-align: center;
-  width: 40vw;
-}
-.white {
+.otherSkillsDiv p {
   color: white;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
-.mapsText {
-  width: 50vw;
-  margin: 0 0;
+.hollowCircle {
+  width: 65px;
+  height: 65px;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  z-index: 5;
+  position: relative;
+  top: 83px;
+  right: calc(90vw - 17.5px);
 }
-.h2 {
-  margin: 20px;
-  font-size: 1.4em;
-  letter-spacing: 0.05em;
-  line-height: 1.6em;
+.orangeCircle {
+  position: relative;
+  right: 90vw;
+  top: 150px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff3131;
+  z-index: 1;
 }
-.orange {
-  color: #fd5622ff;
+.projects {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 15vw;
+  scroll-snap-type: y mandatory; /* Add scroll-snap-type */
+  scroll-padding-top: 5vh;
+}
+.project {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  scroll-snap-align: start;
+}
+.projectSection {
+  align-self: end;
+  margin-right: 0vw;
+  width: 100vw;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0;
+  position: relative;
 }
 
-.h1 {
-  margin-top: 0;
-  font-size: 2.5em;
-  text-underline-offset: 0.25em;
-  margin-bottom: 20px;
-  letter-spacing: 0.1em;
+.projectSection img {
+  max-height: 80vh;
+  max-width: 40vw; /* Updated to make the content smaller */
+  z-index: 1;
+  border-radius: 8px;
+  margin: 0 5vw;
+  border: 3px solid black;
 }
-.italics {
-  font-style: italic;
+.projectSection img:hover {
+  z-index: 10;
+  cursor: pointer;
+}
+
+.projectSectionText {
+  max-width: 70vw; /* Updated to make the content smaller */
+  margin: 0 5vw;
+}
+
+.projectTitle {
+  margin-top: 0;
+  color: black;
+  font-size: 3rem; /* Updated to make the content smaller */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.projectSectionParagraph {
+  font-size: 22px;
+  margin: 14px 0;
+  font-weight: bold;
+}
+
+.projectInfo {
+  color: black;
+  font-size: 1.125rem; /* Updated to make the content smaller */
+  line-height: 1.6;
+  max-width: 50vw;
+}
+
+@media screen and (max-width: 900px) {
+  .longLine {
+    position: absolute;
+    top: 60px;
+    height: calc(100% -120px);
+  }
+}
+
+/* ... rest of the CSS ... */
+
+@media screen and (max-width: 768px) {
+  .bigLogo {
+    width: 90vw;
+    margin-top: 15vh;
+    min-height: none;
+  }
+  .bigText {
+    font-size: 3rem;
+    margin: 2vh 7vw;
+  }
+  .projectSection {
+    align-self: right;
+    width: 100vw;
+    display: inline-block;
+    margin-bottom: 0vh;
+    position: relative;
+    flex-direction: none;
+  }
+
+  .projectSection img {
+    align-self: center;
+    margin: 0 5vw;
+    max-width: 90vw;
+    align-self: start;
+  }
+  .projectSectionText {
+    max-width: 90vw;
+    margin: 0 5vw;
+  }
+  .projectSectionText h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .projectSectionText p {
+    max-width: 90vw;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  .hollowCircle {
+    width: 25px;
+    height: 25px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    z-index: 5;
+    position: relative;
+    top: 92.5px;
+    right: calc(95vw - 18.5px);
+  }
+  .orangeCircle {
+    position: relative;
+    right: calc(95vw - 11px);
+    top: 120px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff3131;
+    z-index: 1;
+  }
+  .longLine {
+    position: absolute;
+    left: calc(5vw);
+    top: 60px;
+    height: calc(100% -120px);
+    background-color: #ff3131;
+    z-index: 1;
+  }
+  .projects {
+    scroll-snap-type: none;
+  }
+
+  .project {
+    scroll-snap-align: none;
+  }
+  .introDiv h1 {
+    font-size: 24px;
+    line-height: 36px;
+    width: 90vw;
+    max-width: 90vw;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+  .introDiv {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .introBottom {
+    flex-direction: column;
+    margin-bottom: 5vh;
+  }
+  .introDiv h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 90vw;
+    max-width: 90vw;
+    margin-top: 1vh;
+    text-align: center;
+  }
+  .introDiv button {
+    margin-top: 1vh;
+  }
+  .heroTop {
+    margin-top: 10vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .profileDiv {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .skillsDiv {
+    margin-top: 10vh;
+  }
+  .knowledgeDiv {
+    margin-top: 5vh;
+  }
+  .superchargeDiv {
+    flex-direction: column;
+  }
+  .superchargeDiv h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    width: 80vw;
+    max-width: 80vw;
+    margin-top: 1vh;
+    text-align: center;
+  }
+  .superchargeDiv h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 80vw;
+    max-width: 80vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .reactNodeDiv {
+    flex-direction: column;
+  }
+  .reactDiv,
+  .nodeDiv {
+    width: 80vw;
+  }
+  .nodeDiv {
+    margin-top: 5vh;
+  }
+  .otherSkillsDiv {
+    width: 80vw;
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+  }
+  .skillsDiv {
+    margin-bottom: 10vh;
+  }
+  .audioSelect {
+    min-width: unset;
+    width: 90vw;
+  }
+  .meImg {
+    height: 225px !important;
+    width: 225px !important;
+  }
+  .introDiv {
+    flex-direction: column !important;
+  }
 }
