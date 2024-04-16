@@ -25,6 +25,8 @@ import melanoma from "../images/melanoma.png";
 import ferris from "../images/ferris.png";
 import sma from "../images/sma.png";
 import lex from "../images/lex.png";
+import teeth from "../images/teeth.png";
+
 import listings from "../images/listings.png";
 import leap from "../images/leap.png";
 import W from "../images/w.png";
@@ -106,6 +108,15 @@ function Landing() {
         "Generate summaries about the transcript.",
         "Ask questions about the transcript using GPT-4.",
         "Integrated Stripe. Got my first paying customers.",
+      ],
+    },
+    {
+      title: "Healthcare Network, Fluoride Checker",
+      img: teeth,
+      link: "https://www.collierwater.com/",
+      information: [
+        "Collier county removed fluoride from its water supply in certain areas.",
+        "Website tells dentists which patients have fluoride added to their water.",
       ],
     },
     {
