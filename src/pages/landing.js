@@ -23,6 +23,8 @@ import llm from "../images/llm.png";
 import rentals from "../images/rentals.png";
 import melanoma from "../images/melanoma.png";
 import ferris from "../images/ferris.png";
+import sma from "../images/sma.png";
+import lex from "../images/lex.png";
 import listings from "../images/listings.png";
 import leap from "../images/leap.png";
 import W from "../images/w.png";
@@ -67,14 +69,22 @@ function Landing() {
       ],
     },
     {
-      title: "Audio Transcription",
-      img: ll,
-      link: "https://github.com/william-halbert/Chat-With-Audio-Transcriptions",
+      title: "Outperforming Stock Algorithms",
+      img: sma,
+      link: "https://www.kaggle.com/code/williamhalbert/20sma-outperforming-maanng-analysis",
       information: [
-        "Built audio transcription.",
-        "Generate summaries about the transcript.",
-        "Ask questions about the transcript using GPT-4.",
-        "Integrated Stripe. Got my first paying customers.",
+        "Back-tested 5, 8, 10, 20, 50, and 200 day simple moving average strategies.",
+        "Outperformed on over 50 stocks tickers tested.",
+        "Back-tested successfully through 2008.",
+      ],
+    },
+    {
+      title: "LexFridmanGPT",
+      img: lex,
+      link: "https://www.kaggle.com/code/williamhalbert/lexfridmangpt",
+      information: [
+        "Trained GPT2 on 320 Lex Fridman Podcast transcripts.",
+        "Generated Lex Fridman responses to his commonly asked questions.",
       ],
     },
     {
@@ -85,6 +95,17 @@ function Landing() {
         "Trained on 13,900 photos.",
         "Trained 6 different pre-trained image models.",
         "Reached 94.7% accuracy, well-above many researchers. 2nd in the Kaggle community.",
+      ],
+    },
+    {
+      title: "Audio Transcription",
+      img: ll,
+      link: "https://github.com/william-halbert/Chat-With-Audio-Transcriptions",
+      information: [
+        "Built audio transcription.",
+        "Generate summaries about the transcript.",
+        "Ask questions about the transcript using GPT-4.",
+        "Integrated Stripe. Got my first paying customers.",
       ],
     },
     {
