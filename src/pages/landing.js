@@ -53,6 +53,7 @@ function Landing() {
       img: ohana,
       link: "https://www.liveohana.ai/",
       information: [
+        "Built core functionality alongside Co-founder.",
         "Help interns find summer housing.",
         "9,000 incoming interns.",
         "Partner with Atlassian, Duolingo, Oracle, Ramp, Salesforce, Wells Fargo, Coinbase, Uber, Bubble, CBIZ.",
@@ -64,10 +65,10 @@ function Landing() {
       img: ferris,
       link: "https://github.com/william-halbert/ferris-app",
       information: [
-        "Turn text from photos to structured notes.",
+        "Built and tested iOS app at Univ. of FL.",
+        "Turn photos to structured notes.",
         "Save images to notes, such as diagrams.",
-        "Reference notes on web.",
-        "30 Testflight users at University of Florida.",
+        "Also, see notes on web app.",
       ],
     },
     {
