@@ -57,7 +57,7 @@ function Landing() {
         "Built core functionality alongside Co-founder.",
         "Help interns find summer housing.",
         "12,000 incoming interns, within year 1.",
-        "$+1M in rent processed.",
+        "+$1M in rent processed.",
         "Biggest platform for NYC sublets.",
         "Partner with Atlassian, Duolingo, Oracle, Ramp, Salesforce, Wells Fargo, Coinbase, Uber, Bubble, CBIZ.",
         "Investors from Neo (Ali Partovi), Lightbank, and executives from Airbnb, Zillow, and Robinhood.",
