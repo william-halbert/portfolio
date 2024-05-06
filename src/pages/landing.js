@@ -55,7 +55,8 @@ function Landing() {
       information: [
         "Built core functionality alongside Co-founder.",
         "Help interns find summer housing.",
-        "10,000 incoming interns.",
+        "12,000 incoming interns, within year 1.",
+        "$+1M in rent processed.",
         "Biggest platform for NYC sublets.",
         "Partner with Atlassian, Duolingo, Oracle, Ramp, Salesforce, Wells Fargo, Coinbase, Uber, Bubble, CBIZ.",
         "Investors from Neo (Ali Partovi), Lightbank, and executives from Airbnb, Zillow, and Robinhood.",
@@ -183,7 +184,7 @@ function Landing() {
               transition={{ duration: 2, delay: 0 }}
             >
               Builder of Websites, Apps, ML Models, Databases, APIs, and
-              eventually, companies
+              Companies
             </motion.h1>
           </div>
         </div>
