@@ -23,6 +23,7 @@ import llm from "../images/llm.png";
 import rentals from "../images/rentals.png";
 import melanoma from "../images/melanoma.png";
 import ferris from "../images/ferris.png";
+import willheart from "../images/willheart.png";
 import sma from "../images/sma.png";
 import lex from "../images/lex.png";
 import teeth from "../images/teeth.png";
@@ -60,6 +61,17 @@ function Landing() {
         "Biggest platform for NYC sublets.",
         "Partner with Atlassian, Duolingo, Oracle, Ramp, Salesforce, Wells Fargo, Coinbase, Uber, Bubble, CBIZ.",
         "Investors from Neo (Ali Partovi), Lightbank, and executives from Airbnb, Zillow, and Robinhood.",
+      ],
+    },
+    {
+      title: "WillHeart, Hedge Fund",
+      img: willheart,
+      link: "https://willhe.art",
+      information: [
+        "Data science applied to algorithmic trading.",
+        "Incredible backtesting results.",
+        "Live-trading and testing underway.",
+        "Stay tuned.",
       ],
     },
     {

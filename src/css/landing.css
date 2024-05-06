@@ -421,9 +421,9 @@ a {
   max-height: 80vh;
   max-width: 40vw; /* Updated to make the content smaller */
   z-index: 1;
-  border-radius: 8px;
+  border-radius: 15px;
   margin: 0 5vw;
-  border: 3px solid black;
+  border: 3px solid #0064e6;
 }
 .projectSection img:hover {
   z-index: 10;
