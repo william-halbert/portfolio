@@ -64,7 +64,7 @@ function Landing() {
       ],
     },
     {
-      title: "WillHeart, Hedge Fund",
+      title: "WillHeart, Investment Fund",
       img: willheart,
       link: "https://willhe.art",
       information: [
