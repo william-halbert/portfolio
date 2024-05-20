@@ -85,16 +85,7 @@ function Landing() {
         "Also, see notes on web app.",
       ],
     },
-    {
-      title: "Outperforming Stock Algorithms",
-      img: sma,
-      link: "https://www.kaggle.com/code/williamhalbert/20sma-outperforming-maanng-analysis",
-      information: [
-        "Back-tested 5, 8, 10, 20, 50, and 200 day simple moving average strategies.",
-        "Outperformed on over 50 stocks tickers tested.",
-        "Back-tested successfully through 2008.",
-      ],
-    },
+
     {
       title: "LexFridmanGPT",
       img: lex,
