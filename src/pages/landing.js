@@ -64,17 +64,6 @@ function Landing() {
       ],
     },
     {
-      title: "WillHeart, Investment Fund",
-      img: willheart,
-      link: "https://willhe.art",
-      information: [
-        "Data science applied to algorithmic trading.",
-        "Incredible backtesting results.",
-        "Live-trading and testing underway.",
-        "Stay tuned.",
-      ],
-    },
-    {
       title: "Ferris Note-Taking App",
       img: ferris,
       link: "https://github.com/william-halbert/ferris-app",
