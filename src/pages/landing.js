@@ -56,11 +56,22 @@ function Landing() {
       information: [
         "Built core functionality alongside Co-founder.",
         "Help interns find summer housing.",
-        "12,000 incoming interns, within year 1.",
-        "+$1M in rent processed.",
+        "13,000 incoming interns, within year 1.",
+        "+$2M in rent processed.",
+        "20,000 nights booked.",
         "Biggest platform for NYC sublets.",
         "Partner with Atlassian, Duolingo, Oracle, Ramp, Salesforce, Wells Fargo, Coinbase, Uber, Bubble, CBIZ.",
         "Investors from Neo (Ali Partovi), Lightbank, and executives from Airbnb, Zillow, and Robinhood.",
+      ],
+    },
+    {
+      title: "WillHeart, Algorithmic Investment Fund",
+      img: willheart,
+      link: "https://www.willhe.art/",
+      information: [
+        "Backtesting complete.",
+        "Outstanding results.",
+        "Live-testing now.",
       ],
     },
     {
